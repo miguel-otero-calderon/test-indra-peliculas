@@ -1,0 +1,6 @@
+framework module Pods_test_indra_peliculas_test_indra_peliculasUITests {
+  umbrella header "Pods-test-indra-peliculas-test-indra-peliculasUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
