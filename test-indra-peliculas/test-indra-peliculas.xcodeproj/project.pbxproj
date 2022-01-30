@@ -14,6 +14,8 @@
 		4CA37A2527A6C26A006A30B4 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A2427A6C26A006A30B4 /* CGRect+Extensions.swift */; };
 		4CA37A2A27A6DC48006A30B4 /* MovieCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A2827A6DC48006A30B4 /* MovieCollectionCell.swift */; };
 		4CA37A2B27A6DC48006A30B4 /* MovieCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA37A2927A6DC48006A30B4 /* MovieCollectionCell.xib */; };
+		4CA37A2E27A701BC006A30B4 /* PaginationCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A2C27A701BC006A30B4 /* PaginationCollectionCell.swift */; };
+		4CA37A2F27A701BC006A30B4 /* PaginationCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA37A2D27A701BC006A30B4 /* PaginationCollectionCell.xib */; };
 		4CB661AA27A5FE0700E3D9C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661A927A5FE0700E3D9C6 /* AppDelegate.swift */; };
 		4CB661AC27A5FE0700E3D9C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661AB27A5FE0700E3D9C6 /* SceneDelegate.swift */; };
 		4CB661B327A5FE0900E3D9C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB661B227A5FE0900E3D9C6 /* Assets.xcassets */; };
@@ -85,6 +87,8 @@
 		4CA37A2427A6C26A006A30B4 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
 		4CA37A2827A6DC48006A30B4 /* MovieCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionCell.swift; sourceTree = "<group>"; };
 		4CA37A2927A6DC48006A30B4 /* MovieCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionCell.xib; sourceTree = "<group>"; };
+		4CA37A2C27A701BC006A30B4 /* PaginationCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationCollectionCell.swift; sourceTree = "<group>"; };
+		4CA37A2D27A701BC006A30B4 /* PaginationCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaginationCollectionCell.xib; sourceTree = "<group>"; };
 		4CB661A627A5FE0700E3D9C6 /* test-indra-peliculas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-indra-peliculas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB661A927A5FE0700E3D9C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CB661AB27A5FE0700E3D9C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 			children = (
 				4CA37A2827A6DC48006A30B4 /* MovieCollectionCell.swift */,
 				4CA37A2927A6DC48006A30B4 /* MovieCollectionCell.xib */,
+				4CA37A2C27A701BC006A30B4 /* PaginationCollectionCell.swift */,
+				4CA37A2D27A701BC006A30B4 /* PaginationCollectionCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -471,6 +477,7 @@
 				4CB661B627A5FE0900E3D9C6 /* LaunchScreen.storyboard in Resources */,
 				4CB6624027A6686100E3D9C6 /* SearchView.storyboard in Resources */,
 				4CB661B327A5FE0900E3D9C6 /* Assets.xcassets in Resources */,
+				4CA37A2F27A701BC006A30B4 /* PaginationCollectionCell.xib in Resources */,
 				4CB6621B27A6291D00E3D9C6 /* MovieView.storyboard in Resources */,
 				4CA37A2B27A6DC48006A30B4 /* MovieCollectionCell.xib in Resources */,
 				4CB6620727A625F800E3D9C6 /* LoginView.storyboard in Resources */,
@@ -571,6 +578,7 @@
 				4CB6623E27A659E500E3D9C6 /* ProfileWireFrame.swift in Sources */,
 				4CB661F927A61D5F00E3D9C6 /* LoginEntity.swift in Sources */,
 				4CB6623B27A659E500E3D9C6 /* ProfileInteractor.swift in Sources */,
+				4CA37A2E27A701BC006A30B4 /* PaginationCollectionCell.swift in Sources */,
 				4CB6622B27A6597E00E3D9C6 /* SearchProtocols.swift in Sources */,
 				4CB661E027A6032000E3D9C6 /* MovieService.swift in Sources */,
 				4CB6622D27A6597E00E3D9C6 /* SearchView.swift in Sources */,

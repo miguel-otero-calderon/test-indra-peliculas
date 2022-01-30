@@ -17,9 +17,11 @@ class MovieCollectionCell: UICollectionViewCell {
         // Initialization code
     }
     func configure(movie: MovieData) {
+        self.movieImage.image = UIImage(named: "PosterPlaceholder")
         if let posterPath = movie.posterPath {
             if let url = URL(string: posterPath) {
-                self.movieImage.kf.setImage(with: url)
+                self.movieImage.kf.setImage(with: url ,
+                                            placeholder: UIImage(named: "PosterPlaceholder"))
             }
         }
     }
