@@ -17,12 +17,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         
-        let loginView = LoginWireFrame.createLoginModule()
-        let navigationController = UINavigationController(rootViewController: loginView)
-        window.rootViewController = navigationController
+        let loginView = (LoginWireFrame.createLoginModule() as? LoginView)!
+        let movieView = MovieWireFrame.createMovieModule()
         
-        window.makeKeyAndVisible()
-        self.window = window
+        let existsLogin = loginView.presenter?.existsLogin()
+        if existsLogin == nil {
+            let navigationController = UINavigationController(rootViewController: loginView)
+            window.rootViewController = navigationController
+            window.makeKeyAndVisible()
+            self.window = window
+            return
+        }
+        
+        if let existsLogin = existsLogin {
+            if existsLogin {
+                window.rootViewController = MovieWireFrame.createMovieModule()
+            } else {
+                let navigationController = UINavigationController(rootViewController: loginView)
+                window.rootViewController = navigationController
+            }
+            window.makeKeyAndVisible()
+            self.window = window
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

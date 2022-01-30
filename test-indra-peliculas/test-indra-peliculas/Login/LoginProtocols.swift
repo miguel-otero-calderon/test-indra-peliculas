@@ -28,6 +28,7 @@ protocol LoginPresenterProtocol: class {
     func getTermsOfService() -> String
     func getPrivacyPolicy() -> String
     func signIn(email: String,password: String,completion: @escaping (Result<LoginEntity, Error>) -> Void)
+    func existsLogin() -> Bool
 }
 
 protocol LoginInteractorOutputProtocol: class {
@@ -41,6 +42,7 @@ protocol LoginInteractorInputProtocol: class {
     var remoteDatamanager: LoginRemoteDataManagerInputProtocol? { get set }
     
     func signIn(email: String,password: String,completion: @escaping (Result<LoginEntity, Error>) -> Void)
+    func existsLogin() -> Bool
 }
 
 protocol LoginDataManagerInputProtocol: class {
@@ -60,4 +62,5 @@ protocol LoginRemoteDataManagerOutputProtocol: class {
 
 protocol LoginLocalDataManagerInputProtocol: class {
     // INTERACTOR -> LOCALDATAMANAGER
+    func existsLogin() -> Bool
 }

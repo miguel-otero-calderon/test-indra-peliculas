@@ -8,5 +8,10 @@
 import Foundation
 
 class LoginLocalDataManager:LoginLocalDataManagerInputProtocol {
-    
+    func existsLogin() -> Bool {
+        guard let _ = UserDefaults.standard.string(forKey: "email") else {
+            return false
+        }
+        return true
+    }
 }

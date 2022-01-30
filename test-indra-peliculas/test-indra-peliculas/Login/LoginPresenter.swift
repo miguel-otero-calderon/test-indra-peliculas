@@ -33,6 +33,10 @@ extension LoginPresenter: LoginPresenterProtocol {
     func signIn(email: String, password: String, completion: @escaping (Result<LoginEntity, Error>) -> Void) {
         interactor?.signIn(email: email, password: password, completion: completion)
     }
+    
+    func existsLogin() -> Bool {
+        return interactor?.existsLogin() ?? false
+    }
 }
 
 extension LoginPresenter: LoginInteractorOutputProtocol {

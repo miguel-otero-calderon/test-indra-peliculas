@@ -17,6 +17,10 @@ class LoginInteractor: LoginInteractorInputProtocol {
     func signIn(email: String, password: String, completion: @escaping (Result<LoginEntity, Error>) -> Void) {
         remoteDatamanager?.signIn(email: email, password: password, completion: completion)
     }
+    
+    func existsLogin() -> Bool {
+        return localDatamanager?.existsLogin() ?? false
+    }
 }
 
 extension LoginInteractor: LoginRemoteDataManagerOutputProtocol {
