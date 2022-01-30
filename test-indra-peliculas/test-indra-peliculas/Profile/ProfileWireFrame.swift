@@ -12,8 +12,8 @@ import UIKit
 class ProfileWireFrame: ProfileWireFrameProtocol {
 
     class func createProfileModule() -> UIViewController {
-        let navController = mainStoryboard.instantiateViewController(withIdentifier: "ProfileView")
-        if let view = navController.children.first as? ProfileView {
+        let profileView = mainStoryboard.instantiateViewController(withIdentifier: "ProfileView") as? ProfileView
+        if let view = profileView {
             let presenter: ProfilePresenterProtocol & ProfileInteractorOutputProtocol = ProfilePresenter()
             let interactor: ProfileInteractorInputProtocol & ProfileRemoteDataManagerOutputProtocol = ProfileInteractor()
             let localDataManager: ProfileLocalDataManagerInputProtocol = ProfileLocalDataManager()
@@ -29,7 +29,7 @@ class ProfileWireFrame: ProfileWireFrameProtocol {
             interactor.remoteDatamanager = remoteDataManager
             remoteDataManager.remoteRequestHandler = interactor
             
-            return navController
+            return view
         }
         return UIViewController()
     }

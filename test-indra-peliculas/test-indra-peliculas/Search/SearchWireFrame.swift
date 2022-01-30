@@ -12,8 +12,8 @@ import UIKit
 class SearchWireFrame: SearchWireFrameProtocol {
 
     class func createSearchModule() -> UIViewController {
-        let navController = mainStoryboard.instantiateViewController(withIdentifier: "SearchView")
-        if let view = navController.children.first as? SearchView {
+        let searchView = mainStoryboard.instantiateViewController(withIdentifier: "SearchView") as? SearchView
+        if let view = searchView {
             let presenter: SearchPresenterProtocol & SearchInteractorOutputProtocol = SearchPresenter()
             let interactor: SearchInteractorInputProtocol & SearchRemoteDataManagerOutputProtocol = SearchInteractor()
             let localDataManager: SearchLocalDataManagerInputProtocol = SearchLocalDataManager()
@@ -29,7 +29,7 @@ class SearchWireFrame: SearchWireFrameProtocol {
             interactor.remoteDatamanager = remoteDataManager
             remoteDataManager.remoteRequestHandler = interactor
             
-            return navController
+            return view
         }
         return UIViewController()
     }

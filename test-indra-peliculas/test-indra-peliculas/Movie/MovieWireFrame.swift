@@ -12,8 +12,8 @@ import UIKit
 class MovieWireFrame: MovieWireFrameProtocol {
 
     class func createMovieModule() -> UIViewController {
-        let navController = mainStoryboard.instantiateViewController(withIdentifier: "MovieView")
-        if let view = navController.children.first as? MovieView {
+        let movieView = mainStoryboard.instantiateViewController(withIdentifier: "MovieView") as? MovieView
+        if let view = movieView {
             let presenter: MoviePresenterProtocol & MovieInteractorOutputProtocol = MoviePresenter()
             let interactor: MovieInteractorInputProtocol & MovieRemoteDataManagerOutputProtocol = MovieInteractor()
             let localDataManager: MovieLocalDataManagerInputProtocol = MovieLocalDataManager()
@@ -29,7 +29,7 @@ class MovieWireFrame: MovieWireFrameProtocol {
             interactor.remoteDatamanager = remoteDataManager
             remoteDataManager.remoteRequestHandler = interactor
             
-            return navController
+            return view
         }
         return UIViewController()
     }

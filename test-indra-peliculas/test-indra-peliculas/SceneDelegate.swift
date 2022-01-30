@@ -18,7 +18,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         
         let loginView = (LoginWireFrame.createLoginModule() as? LoginView)!
-        let movieView = MovieWireFrame.createMovieModule()
         
         let existsLogin = loginView.presenter?.existsLogin()
         if existsLogin == nil {
@@ -31,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if let existsLogin = existsLogin {
             if existsLogin {
-                window.rootViewController = MovieWireFrame.createMovieModule()
+                window.rootViewController = TabBarViewController()
             } else {
                 let navigationController = UINavigationController(rootViewController: loginView)
                 window.rootViewController = navigationController

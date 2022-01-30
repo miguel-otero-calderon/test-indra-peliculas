@@ -56,8 +56,8 @@ final class TabBarViewController: UITabBarController {
         }
 
         // Define tab items
-        nav1.tabBarItem = UITabBarItem(title: "Movies", image: UIImage(systemName: "movie"), tag: 1)
-        nav2.tabBarItem = UITabBarItem(title: "Search", image: UIImage(systemName: "find"), tag: 1)
+        nav1.tabBarItem = UITabBarItem(title: "Movies", image: UIImage(named: "Movies"), tag: 1)
+        nav2.tabBarItem = UITabBarItem(title: "Search", image: UIImage(named: "Search"), tag: 1)
         nav3.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.circle"), tag: 1)
 
         // Set controllers

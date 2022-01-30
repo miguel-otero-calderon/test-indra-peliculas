@@ -55,6 +55,8 @@
 		4CB6623C27A659E500E3D9C6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6623527A659E500E3D9C6 /* ProfileView.swift */; };
 		4CB6623D27A659E500E3D9C6 /* ProfileRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6623627A659E500E3D9C6 /* ProfileRemoteDataManager.swift */; };
 		4CB6623E27A659E500E3D9C6 /* ProfileWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6623727A659E500E3D9C6 /* ProfileWireFrame.swift */; };
+		4CB6624027A6686100E3D9C6 /* SearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB6623F27A6686100E3D9C6 /* SearchView.storyboard */; };
+		4CB6624227A6692B00E3D9C6 /* ProfileView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB6624127A6692A00E3D9C6 /* ProfileView.storyboard */; };
 		64FB0239ED3016586C2D972E /* Pods_test_indra_peliculasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AD7BA4082659B7063A732E /* Pods_test_indra_peliculasTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +123,8 @@
 		4CB6623527A659E500E3D9C6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4CB6623627A659E500E3D9C6 /* ProfileRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRemoteDataManager.swift; sourceTree = "<group>"; };
 		4CB6623727A659E500E3D9C6 /* ProfileWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWireFrame.swift; sourceTree = "<group>"; };
+		4CB6623F27A6686100E3D9C6 /* SearchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchView.storyboard; sourceTree = "<group>"; };
+		4CB6624127A6692A00E3D9C6 /* ProfileView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileView.storyboard; sourceTree = "<group>"; };
 		6C9153D6ADF6EC8AC8349651 /* Pods-test-indra-peliculas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-indra-peliculas.release.xcconfig"; path = "Target Support Files/Pods-test-indra-peliculas/Pods-test-indra-peliculas.release.xcconfig"; sourceTree = "<group>"; };
 		77EEAF95EA048D95672D3858 /* Pods_test_indra_peliculas_test_indra_peliculasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_indra_peliculas_test_indra_peliculasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A20C356C00EE85DDC0A44D /* Pods-test-indra-peliculas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-indra-peliculas.debug.xcconfig"; path = "Target Support Files/Pods-test-indra-peliculas/Pods-test-indra-peliculas.debug.xcconfig"; sourceTree = "<group>"; };
@@ -264,11 +268,11 @@
 		4CB6620B27A6281B00E3D9C6 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				4CB6621027A628CD00E3D9C6 /* MovieView.swift */,
 				4CB6620C27A628CD00E3D9C6 /* MoviePresenter.swift */,
 				4CB6620D27A628CD00E3D9C6 /* MovieLocalDataManager.swift */,
 				4CB6620E27A628CD00E3D9C6 /* MovieProtocols.swift */,
 				4CB6620F27A628CD00E3D9C6 /* MovieInteractor.swift */,
-				4CB6621027A628CD00E3D9C6 /* MovieView.swift */,
 				4CB6621127A628CD00E3D9C6 /* MovieRemoteDataManager.swift */,
 				4CB6621227A628CD00E3D9C6 /* MovieWireFrame.swift */,
 				4CB6621A27A6291D00E3D9C6 /* MovieView.storyboard */,
@@ -287,13 +291,14 @@
 		4CB6622127A6531A00E3D9C6 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				4CB6622627A6597E00E3D9C6 /* SearchView.swift */,
 				4CB6622227A6597E00E3D9C6 /* SearchPresenter.swift */,
 				4CB6622327A6597E00E3D9C6 /* SearchLocalDataManager.swift */,
 				4CB6622427A6597E00E3D9C6 /* SearchProtocols.swift */,
 				4CB6622527A6597E00E3D9C6 /* SearchInteractor.swift */,
-				4CB6622627A6597E00E3D9C6 /* SearchView.swift */,
 				4CB6622727A6597E00E3D9C6 /* SearchRemoteDataManager.swift */,
 				4CB6622827A6597E00E3D9C6 /* SearchWireFrame.swift */,
+				4CB6623F27A6686100E3D9C6 /* SearchView.storyboard */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 				4CB6623527A659E500E3D9C6 /* ProfileView.swift */,
 				4CB6623627A659E500E3D9C6 /* ProfileRemoteDataManager.swift */,
 				4CB6623727A659E500E3D9C6 /* ProfileWireFrame.swift */,
+				4CB6624127A6692A00E3D9C6 /* ProfileView.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -421,9 +427,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CB661B627A5FE0900E3D9C6 /* LaunchScreen.storyboard in Resources */,
+				4CB6624027A6686100E3D9C6 /* SearchView.storyboard in Resources */,
 				4CB661B327A5FE0900E3D9C6 /* Assets.xcassets in Resources */,
 				4CB6621B27A6291D00E3D9C6 /* MovieView.storyboard in Resources */,
 				4CB6620727A625F800E3D9C6 /* LoginView.storyboard in Resources */,
+				4CB6624227A6692B00E3D9C6 /* ProfileView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
