@@ -10,7 +10,6 @@
 		23388A0D02727AB8D87C54E8 /* Pods_test_indra_peliculas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E36DFE414BC179CF1706322E /* Pods_test_indra_peliculas.framework */; };
 		4CB661AA27A5FE0700E3D9C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661A927A5FE0700E3D9C6 /* AppDelegate.swift */; };
 		4CB661AC27A5FE0700E3D9C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661AB27A5FE0700E3D9C6 /* SceneDelegate.swift */; };
-		4CB661AE27A5FE0700E3D9C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661AD27A5FE0700E3D9C6 /* ViewController.swift */; };
 		4CB661B127A5FE0700E3D9C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB661AF27A5FE0700E3D9C6 /* Main.storyboard */; };
 		4CB661B327A5FE0900E3D9C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB661B227A5FE0900E3D9C6 /* Assets.xcassets */; };
 		4CB661B627A5FE0900E3D9C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB661B427A5FE0900E3D9C6 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,18 @@
 		4CB661E227A6033D00E3D9C6 /* MovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661E127A6033D00E3D9C6 /* MovieRequest.swift */; };
 		4CB661E427A6034700E3D9C6 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661E327A6034700E3D9C6 /* MovieResponse.swift */; };
 		4CB661E827A6123400E3D9C6 /* MovieServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661E727A6123400E3D9C6 /* MovieServiceTest.swift */; };
+		4CB661EB27A6192200E3D9C6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661EA27A6192200E3D9C6 /* LoginView.swift */; };
+		4CB661ED27A61BED00E3D9C6 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661EC27A61BED00E3D9C6 /* LoginProtocols.swift */; };
+		4CB661EF27A61C3D00E3D9C6 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661EE27A61C3D00E3D9C6 /* LoginInteractor.swift */; };
+		4CB661F127A61C5200E3D9C6 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661F027A61C5200E3D9C6 /* LoginPresenter.swift */; };
+		4CB661F327A61C7F00E3D9C6 /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661F227A61C7F00E3D9C6 /* LoginWireFrame.swift */; };
+		4CB661F527A61CAE00E3D9C6 /* LoginLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661F427A61CAE00E3D9C6 /* LoginLocalDataManager.swift */; };
+		4CB661F727A61CDE00E3D9C6 /* LoginRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661F627A61CDE00E3D9C6 /* LoginRemoteDataManager.swift */; };
+		4CB661F927A61D5F00E3D9C6 /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661F827A61D5F00E3D9C6 /* LoginEntity.swift */; };
+		4CB661FC27A61E4900E3D9C6 /* LoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661FB27A61E4900E3D9C6 /* LoginHeaderView.swift */; };
+		4CB661FE27A61E7C00E3D9C6 /* IGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661FD27A61E7C00E3D9C6 /* IGTextField.swift */; };
+		4CB6620127A61EE200E3D9C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6620027A61EE200E3D9C6 /* Extensions.swift */; };
+		4CB6620327A61F6200E3D9C6 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6620227A61F6200E3D9C6 /* HapticsManager.swift */; };
 		64FB0239ED3016586C2D972E /* Pods_test_indra_peliculasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AD7BA4082659B7063A732E /* Pods_test_indra_peliculasTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +50,6 @@
 		4CB661A627A5FE0700E3D9C6 /* test-indra-peliculas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-indra-peliculas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB661A927A5FE0700E3D9C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CB661AB27A5FE0700E3D9C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4CB661AD27A5FE0700E3D9C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CB661B027A5FE0700E3D9C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CB661B227A5FE0900E3D9C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CB661B527A5FE0900E3D9C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +61,18 @@
 		4CB661E127A6033D00E3D9C6 /* MovieRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRequest.swift; sourceTree = "<group>"; };
 		4CB661E327A6034700E3D9C6 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 		4CB661E727A6123400E3D9C6 /* MovieServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServiceTest.swift; sourceTree = "<group>"; };
+		4CB661EA27A6192200E3D9C6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4CB661EC27A61BED00E3D9C6 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		4CB661EE27A61C3D00E3D9C6 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		4CB661F027A61C5200E3D9C6 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		4CB661F227A61C7F00E3D9C6 /* LoginWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireFrame.swift; sourceTree = "<group>"; };
+		4CB661F427A61CAE00E3D9C6 /* LoginLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLocalDataManager.swift; sourceTree = "<group>"; };
+		4CB661F627A61CDE00E3D9C6 /* LoginRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRemoteDataManager.swift; sourceTree = "<group>"; };
+		4CB661F827A61D5F00E3D9C6 /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
+		4CB661FB27A61E4900E3D9C6 /* LoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHeaderView.swift; sourceTree = "<group>"; };
+		4CB661FD27A61E7C00E3D9C6 /* IGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextField.swift; sourceTree = "<group>"; };
+		4CB6620027A61EE200E3D9C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4CB6620227A61F6200E3D9C6 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		6C9153D6ADF6EC8AC8349651 /* Pods-test-indra-peliculas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-indra-peliculas.release.xcconfig"; path = "Target Support Files/Pods-test-indra-peliculas/Pods-test-indra-peliculas.release.xcconfig"; sourceTree = "<group>"; };
 		77EEAF95EA048D95672D3858 /* Pods_test_indra_peliculas_test_indra_peliculasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_indra_peliculas_test_indra_peliculasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A20C356C00EE85DDC0A44D /* Pods-test-indra-peliculas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-indra-peliculas.debug.xcconfig"; path = "Target Support Files/Pods-test-indra-peliculas/Pods-test-indra-peliculas.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,10 +125,12 @@
 		4CB661A827A5FE0700E3D9C6 /* test-indra-peliculas */ = {
 			isa = PBXGroup;
 			children = (
-				4CB661D927A6017E00E3D9C6 /* Networking */,
 				4CB661A927A5FE0700E3D9C6 /* AppDelegate.swift */,
 				4CB661AB27A5FE0700E3D9C6 /* SceneDelegate.swift */,
-				4CB661AD27A5FE0700E3D9C6 /* ViewController.swift */,
+				4CB661E927A6187100E3D9C6 /* Login */,
+				4CB661D927A6017E00E3D9C6 /* Networking */,
+				4CB661FA27A61E1C00E3D9C6 /* Views */,
+				4CB661FF27A61EB600E3D9C6 /* Resources */,
 				4CB661AF27A5FE0700E3D9C6 /* Main.storyboard */,
 				4CB661B227A5FE0900E3D9C6 /* Assets.xcassets */,
 				4CB661B427A5FE0900E3D9C6 /* LaunchScreen.storyboard */,
@@ -141,6 +165,39 @@
 				4CB661E327A6034700E3D9C6 /* MovieResponse.swift */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		4CB661E927A6187100E3D9C6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4CB661EA27A6192200E3D9C6 /* LoginView.swift */,
+				4CB661EC27A61BED00E3D9C6 /* LoginProtocols.swift */,
+				4CB661EE27A61C3D00E3D9C6 /* LoginInteractor.swift */,
+				4CB661F027A61C5200E3D9C6 /* LoginPresenter.swift */,
+				4CB661F227A61C7F00E3D9C6 /* LoginWireFrame.swift */,
+				4CB661F427A61CAE00E3D9C6 /* LoginLocalDataManager.swift */,
+				4CB661F627A61CDE00E3D9C6 /* LoginRemoteDataManager.swift */,
+				4CB661F827A61D5F00E3D9C6 /* LoginEntity.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4CB661FA27A61E1C00E3D9C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CB661FB27A61E4900E3D9C6 /* LoginHeaderView.swift */,
+				4CB661FD27A61E7C00E3D9C6 /* IGTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4CB661FF27A61EB600E3D9C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4CB6620027A61EE200E3D9C6 /* Extensions.swift */,
+				4CB6620227A61F6200E3D9C6 /* HapticsManager.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		B4F06C028FE1DF66B3014165 /* Pods */ = {
@@ -335,14 +392,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB661F127A61C5200E3D9C6 /* LoginPresenter.swift in Sources */,
+				4CB6620127A61EE200E3D9C6 /* Extensions.swift in Sources */,
+				4CB661F327A61C7F00E3D9C6 /* LoginWireFrame.swift in Sources */,
+				4CB661F927A61D5F00E3D9C6 /* LoginEntity.swift in Sources */,
 				4CB661E027A6032000E3D9C6 /* MovieService.swift in Sources */,
-				4CB661AE27A5FE0700E3D9C6 /* ViewController.swift in Sources */,
+				4CB661EF27A61C3D00E3D9C6 /* LoginInteractor.swift in Sources */,
+				4CB661ED27A61BED00E3D9C6 /* LoginProtocols.swift in Sources */,
 				4CB661AA27A5FE0700E3D9C6 /* AppDelegate.swift in Sources */,
+				4CB661EB27A6192200E3D9C6 /* LoginView.swift in Sources */,
 				4CB661DE27A601DA00E3D9C6 /* MovieEndpoint.swift in Sources */,
 				4CB661DB27A601B200E3D9C6 /* EndPoint.swift in Sources */,
 				4CB661E427A6034700E3D9C6 /* MovieResponse.swift in Sources */,
+				4CB661F727A61CDE00E3D9C6 /* LoginRemoteDataManager.swift in Sources */,
 				4CB661E227A6033D00E3D9C6 /* MovieRequest.swift in Sources */,
+				4CB661FC27A61E4900E3D9C6 /* LoginHeaderView.swift in Sources */,
 				4CB661AC27A5FE0700E3D9C6 /* SceneDelegate.swift in Sources */,
+				4CB661FE27A61E7C00E3D9C6 /* IGTextField.swift in Sources */,
+				4CB6620327A61F6200E3D9C6 /* HapticsManager.swift in Sources */,
+				4CB661F527A61CAE00E3D9C6 /* LoginLocalDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
