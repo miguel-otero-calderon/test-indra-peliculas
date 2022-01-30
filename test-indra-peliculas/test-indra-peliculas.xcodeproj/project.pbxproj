@@ -10,7 +10,6 @@
 		23388A0D02727AB8D87C54E8 /* Pods_test_indra_peliculas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E36DFE414BC179CF1706322E /* Pods_test_indra_peliculas.framework */; };
 		4CB661AA27A5FE0700E3D9C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661A927A5FE0700E3D9C6 /* AppDelegate.swift */; };
 		4CB661AC27A5FE0700E3D9C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661AB27A5FE0700E3D9C6 /* SceneDelegate.swift */; };
-		4CB661B127A5FE0700E3D9C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB661AF27A5FE0700E3D9C6 /* Main.storyboard */; };
 		4CB661B327A5FE0900E3D9C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB661B227A5FE0900E3D9C6 /* Assets.xcassets */; };
 		4CB661B627A5FE0900E3D9C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB661B427A5FE0900E3D9C6 /* LaunchScreen.storyboard */; };
 		4CB661DB27A601B200E3D9C6 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661DA27A601B200E3D9C6 /* EndPoint.swift */; };
@@ -31,6 +30,7 @@
 		4CB661FE27A61E7C00E3D9C6 /* IGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661FD27A61E7C00E3D9C6 /* IGTextField.swift */; };
 		4CB6620127A61EE200E3D9C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6620027A61EE200E3D9C6 /* Extensions.swift */; };
 		4CB6620327A61F6200E3D9C6 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6620227A61F6200E3D9C6 /* HapticsManager.swift */; };
+		4CB6620727A625F800E3D9C6 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB6620627A625F800E3D9C6 /* LoginView.storyboard */; };
 		64FB0239ED3016586C2D972E /* Pods_test_indra_peliculasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AD7BA4082659B7063A732E /* Pods_test_indra_peliculasTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +50,6 @@
 		4CB661A627A5FE0700E3D9C6 /* test-indra-peliculas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-indra-peliculas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB661A927A5FE0700E3D9C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CB661AB27A5FE0700E3D9C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4CB661B027A5FE0700E3D9C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CB661B227A5FE0900E3D9C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CB661B527A5FE0900E3D9C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CB661B727A5FE0900E3D9C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		4CB661FD27A61E7C00E3D9C6 /* IGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextField.swift; sourceTree = "<group>"; };
 		4CB6620027A61EE200E3D9C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4CB6620227A61F6200E3D9C6 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		4CB6620627A625F800E3D9C6 /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
 		6C9153D6ADF6EC8AC8349651 /* Pods-test-indra-peliculas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-indra-peliculas.release.xcconfig"; path = "Target Support Files/Pods-test-indra-peliculas/Pods-test-indra-peliculas.release.xcconfig"; sourceTree = "<group>"; };
 		77EEAF95EA048D95672D3858 /* Pods_test_indra_peliculas_test_indra_peliculasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_indra_peliculas_test_indra_peliculasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A20C356C00EE85DDC0A44D /* Pods-test-indra-peliculas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-indra-peliculas.debug.xcconfig"; path = "Target Support Files/Pods-test-indra-peliculas/Pods-test-indra-peliculas.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,7 +131,6 @@
 				4CB661D927A6017E00E3D9C6 /* Networking */,
 				4CB661FA27A61E1C00E3D9C6 /* Views */,
 				4CB661FF27A61EB600E3D9C6 /* Resources */,
-				4CB661AF27A5FE0700E3D9C6 /* Main.storyboard */,
 				4CB661B227A5FE0900E3D9C6 /* Assets.xcassets */,
 				4CB661B427A5FE0900E3D9C6 /* LaunchScreen.storyboard */,
 				4CB661B727A5FE0900E3D9C6 /* Info.plist */,
@@ -170,6 +169,7 @@
 		4CB661E927A6187100E3D9C6 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				4CB6620627A625F800E3D9C6 /* LoginView.storyboard */,
 				4CB661EA27A6192200E3D9C6 /* LoginView.swift */,
 				4CB661EC27A61BED00E3D9C6 /* LoginProtocols.swift */,
 				4CB661EE27A61C3D00E3D9C6 /* LoginInteractor.swift */,
@@ -310,7 +310,7 @@
 			files = (
 				4CB661B627A5FE0900E3D9C6 /* LaunchScreen.storyboard in Resources */,
 				4CB661B327A5FE0900E3D9C6 /* Assets.xcassets in Resources */,
-				4CB661B127A5FE0700E3D9C6 /* Main.storyboard in Resources */,
+				4CB6620727A625F800E3D9C6 /* LoginView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,14 +433,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4CB661AF27A5FE0700E3D9C6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CB661B027A5FE0700E3D9C6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4CB661B427A5FE0900E3D9C6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -581,7 +573,6 @@
 				INFOPLIST_FILE = "test-indra-peliculas/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -610,7 +601,6 @@
 				INFOPLIST_FILE = "test-indra-peliculas/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
