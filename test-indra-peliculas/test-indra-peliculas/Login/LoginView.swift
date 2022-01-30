@@ -19,7 +19,7 @@ class LoginView: UIViewController, UITextFieldDelegate {
     private let emailField: IGTextField = {
         let field = IGTextField()
         field.placeholder = "User"
-        field.keyboardType = .emailAddress
+        field.keyboardType = .default
         field.returnKeyType = .next
         field.autocorrectionType = .no
         return field
@@ -112,31 +112,28 @@ class LoginView: UIViewController, UITextFieldDelegate {
         passwordField.resignFirstResponder()
 
         guard let email = emailField.text,
-              let password = passwordField.text,
-              !email.trimmingCharacters(in: .whitespaces).isEmpty,
-              !password.trimmingCharacters(in: .whitespaces).isEmpty,
-              password.count >= 6 else {
+              let password = passwordField.text else {
             return
         }
 
         presenter?.signIn(email: email, password: password) { [weak self] result in
-//            DispatchQueue.main.async {
-//                switch result {
-//                case .success:
-//                    HapticManager.shared.vibrate(for: .success)
-//                    let vc = TabBarViewController()
-//                    vc.modalPresentationStyle = .fullScreen
-//                    self?.present(
-//                        vc,
-//                        animated: true,
-//                        completion: nil
-//                    )
-//
-//                case .failure(let error):
-//                    HapticManager.shared.vibrate(for: .error)
-//                    print(error)
-//                }
-//            }
+            DispatchQueue.main.async {
+                switch result {
+                case .success:
+                    HapticManager.shared.vibrate(for: .success)
+                    let vc = MovieWireFrame.createMovieModule()
+                    vc.modalPresentationStyle = .fullScreen
+                    self?.present(
+                        vc,
+                        animated: true,
+                        completion: nil
+                    )
+
+                case .failure(let error):
+                    HapticManager.shared.vibrate(for: .error)
+                    print(error)
+                }
+            }
         }
     }
 

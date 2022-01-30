@@ -11,3 +11,6 @@ struct LoginEntity: Codable {
     let username: String
     let email: String
 }
+enum LoginError: Error {
+    case signInFailed
+}

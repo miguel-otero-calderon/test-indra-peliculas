@@ -31,6 +31,14 @@
 		4CB6620127A61EE200E3D9C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6620027A61EE200E3D9C6 /* Extensions.swift */; };
 		4CB6620327A61F6200E3D9C6 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6620227A61F6200E3D9C6 /* HapticsManager.swift */; };
 		4CB6620727A625F800E3D9C6 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB6620627A625F800E3D9C6 /* LoginView.storyboard */; };
+		4CB6621327A628CD00E3D9C6 /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6620C27A628CD00E3D9C6 /* MoviePresenter.swift */; };
+		4CB6621427A628CD00E3D9C6 /* MovieLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6620D27A628CD00E3D9C6 /* MovieLocalDataManager.swift */; };
+		4CB6621527A628CD00E3D9C6 /* MovieProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6620E27A628CD00E3D9C6 /* MovieProtocols.swift */; };
+		4CB6621627A628CD00E3D9C6 /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6620F27A628CD00E3D9C6 /* MovieInteractor.swift */; };
+		4CB6621727A628CD00E3D9C6 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6621027A628CD00E3D9C6 /* MovieView.swift */; };
+		4CB6621827A628CD00E3D9C6 /* MovieRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6621127A628CD00E3D9C6 /* MovieRemoteDataManager.swift */; };
+		4CB6621927A628CD00E3D9C6 /* MovieWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6621227A628CD00E3D9C6 /* MovieWireFrame.swift */; };
+		4CB6621B27A6291D00E3D9C6 /* MovieView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB6621A27A6291D00E3D9C6 /* MovieView.storyboard */; };
 		64FB0239ED3016586C2D972E /* Pods_test_indra_peliculasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AD7BA4082659B7063A732E /* Pods_test_indra_peliculasTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +81,14 @@
 		4CB6620027A61EE200E3D9C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4CB6620227A61F6200E3D9C6 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		4CB6620627A625F800E3D9C6 /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
+		4CB6620C27A628CD00E3D9C6 /* MoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
+		4CB6620D27A628CD00E3D9C6 /* MovieLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLocalDataManager.swift; sourceTree = "<group>"; };
+		4CB6620E27A628CD00E3D9C6 /* MovieProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieProtocols.swift; sourceTree = "<group>"; };
+		4CB6620F27A628CD00E3D9C6 /* MovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
+		4CB6621027A628CD00E3D9C6 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
+		4CB6621127A628CD00E3D9C6 /* MovieRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRemoteDataManager.swift; sourceTree = "<group>"; };
+		4CB6621227A628CD00E3D9C6 /* MovieWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieWireFrame.swift; sourceTree = "<group>"; };
+		4CB6621A27A6291D00E3D9C6 /* MovieView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieView.storyboard; sourceTree = "<group>"; };
 		6C9153D6ADF6EC8AC8349651 /* Pods-test-indra-peliculas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-indra-peliculas.release.xcconfig"; path = "Target Support Files/Pods-test-indra-peliculas/Pods-test-indra-peliculas.release.xcconfig"; sourceTree = "<group>"; };
 		77EEAF95EA048D95672D3858 /* Pods_test_indra_peliculas_test_indra_peliculasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_indra_peliculas_test_indra_peliculasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A20C356C00EE85DDC0A44D /* Pods-test-indra-peliculas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-indra-peliculas.debug.xcconfig"; path = "Target Support Files/Pods-test-indra-peliculas/Pods-test-indra-peliculas.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,10 +143,12 @@
 			children = (
 				4CB661A927A5FE0700E3D9C6 /* AppDelegate.swift */,
 				4CB661AB27A5FE0700E3D9C6 /* SceneDelegate.swift */,
+				4CB6620B27A6281B00E3D9C6 /* Movie */,
 				4CB661E927A6187100E3D9C6 /* Login */,
 				4CB661D927A6017E00E3D9C6 /* Networking */,
 				4CB661FA27A61E1C00E3D9C6 /* Views */,
 				4CB661FF27A61EB600E3D9C6 /* Resources */,
+				4CB6620827A6272800E3D9C6 /* Core */,
 				4CB661B227A5FE0900E3D9C6 /* Assets.xcassets */,
 				4CB661B427A5FE0900E3D9C6 /* LaunchScreen.storyboard */,
 				4CB661B727A5FE0900E3D9C6 /* Info.plist */,
@@ -169,7 +187,6 @@
 		4CB661E927A6187100E3D9C6 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				4CB6620627A625F800E3D9C6 /* LoginView.storyboard */,
 				4CB661EA27A6192200E3D9C6 /* LoginView.swift */,
 				4CB661EC27A61BED00E3D9C6 /* LoginProtocols.swift */,
 				4CB661EE27A61C3D00E3D9C6 /* LoginInteractor.swift */,
@@ -178,6 +195,7 @@
 				4CB661F427A61CAE00E3D9C6 /* LoginLocalDataManager.swift */,
 				4CB661F627A61CDE00E3D9C6 /* LoginRemoteDataManager.swift */,
 				4CB661F827A61D5F00E3D9C6 /* LoginEntity.swift */,
+				4CB6620627A625F800E3D9C6 /* LoginView.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -198,6 +216,28 @@
 				4CB6620227A61F6200E3D9C6 /* HapticsManager.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4CB6620827A6272800E3D9C6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4CB6620B27A6281B00E3D9C6 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				4CB6620C27A628CD00E3D9C6 /* MoviePresenter.swift */,
+				4CB6620D27A628CD00E3D9C6 /* MovieLocalDataManager.swift */,
+				4CB6620E27A628CD00E3D9C6 /* MovieProtocols.swift */,
+				4CB6620F27A628CD00E3D9C6 /* MovieInteractor.swift */,
+				4CB6621027A628CD00E3D9C6 /* MovieView.swift */,
+				4CB6621127A628CD00E3D9C6 /* MovieRemoteDataManager.swift */,
+				4CB6621227A628CD00E3D9C6 /* MovieWireFrame.swift */,
+				4CB6621A27A6291D00E3D9C6 /* MovieView.storyboard */,
+			);
+			path = Movie;
 			sourceTree = "<group>";
 		};
 		B4F06C028FE1DF66B3014165 /* Pods */ = {
@@ -310,6 +350,7 @@
 			files = (
 				4CB661B627A5FE0900E3D9C6 /* LaunchScreen.storyboard in Resources */,
 				4CB661B327A5FE0900E3D9C6 /* Assets.xcassets in Resources */,
+				4CB6621B27A6291D00E3D9C6 /* MovieView.storyboard in Resources */,
 				4CB6620727A625F800E3D9C6 /* LoginView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,20 +436,27 @@
 				4CB661F127A61C5200E3D9C6 /* LoginPresenter.swift in Sources */,
 				4CB6620127A61EE200E3D9C6 /* Extensions.swift in Sources */,
 				4CB661F327A61C7F00E3D9C6 /* LoginWireFrame.swift in Sources */,
+				4CB6621327A628CD00E3D9C6 /* MoviePresenter.swift in Sources */,
 				4CB661F927A61D5F00E3D9C6 /* LoginEntity.swift in Sources */,
 				4CB661E027A6032000E3D9C6 /* MovieService.swift in Sources */,
 				4CB661EF27A61C3D00E3D9C6 /* LoginInteractor.swift in Sources */,
 				4CB661ED27A61BED00E3D9C6 /* LoginProtocols.swift in Sources */,
 				4CB661AA27A5FE0700E3D9C6 /* AppDelegate.swift in Sources */,
 				4CB661EB27A6192200E3D9C6 /* LoginView.swift in Sources */,
+				4CB6621527A628CD00E3D9C6 /* MovieProtocols.swift in Sources */,
 				4CB661DE27A601DA00E3D9C6 /* MovieEndpoint.swift in Sources */,
 				4CB661DB27A601B200E3D9C6 /* EndPoint.swift in Sources */,
+				4CB6621727A628CD00E3D9C6 /* MovieView.swift in Sources */,
 				4CB661E427A6034700E3D9C6 /* MovieResponse.swift in Sources */,
 				4CB661F727A61CDE00E3D9C6 /* LoginRemoteDataManager.swift in Sources */,
 				4CB661E227A6033D00E3D9C6 /* MovieRequest.swift in Sources */,
 				4CB661FC27A61E4900E3D9C6 /* LoginHeaderView.swift in Sources */,
 				4CB661AC27A5FE0700E3D9C6 /* SceneDelegate.swift in Sources */,
+				4CB6621927A628CD00E3D9C6 /* MovieWireFrame.swift in Sources */,
+				4CB6621827A628CD00E3D9C6 /* MovieRemoteDataManager.swift in Sources */,
+				4CB6621427A628CD00E3D9C6 /* MovieLocalDataManager.swift in Sources */,
 				4CB661FE27A61E7C00E3D9C6 /* IGTextField.swift in Sources */,
+				4CB6621627A628CD00E3D9C6 /* MovieInteractor.swift in Sources */,
 				4CB6620327A61F6200E3D9C6 /* HapticsManager.swift in Sources */,
 				4CB661F527A61CAE00E3D9C6 /* LoginLocalDataManager.swift in Sources */,
 			);
@@ -575,6 +623,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -603,6 +652,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
