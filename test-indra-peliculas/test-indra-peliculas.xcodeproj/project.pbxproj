@@ -14,13 +14,12 @@
 		4CB661B127A5FE0700E3D9C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB661AF27A5FE0700E3D9C6 /* Main.storyboard */; };
 		4CB661B327A5FE0900E3D9C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB661B227A5FE0900E3D9C6 /* Assets.xcassets */; };
 		4CB661B627A5FE0900E3D9C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB661B427A5FE0900E3D9C6 /* LaunchScreen.storyboard */; };
-		4CB661C127A5FE0900E3D9C6 /* test_indra_peliculasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661C027A5FE0900E3D9C6 /* test_indra_peliculasTests.swift */; };
 		4CB661DB27A601B200E3D9C6 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661DA27A601B200E3D9C6 /* EndPoint.swift */; };
 		4CB661DE27A601DA00E3D9C6 /* MovieEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661DD27A601DA00E3D9C6 /* MovieEndpoint.swift */; };
 		4CB661E027A6032000E3D9C6 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661DF27A6032000E3D9C6 /* MovieService.swift */; };
 		4CB661E227A6033D00E3D9C6 /* MovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661E127A6033D00E3D9C6 /* MovieRequest.swift */; };
 		4CB661E427A6034700E3D9C6 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661E327A6034700E3D9C6 /* MovieResponse.swift */; };
-		4CB661E627A6038100E3D9C6 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661E527A6038100E3D9C6 /* MovieData.swift */; };
+		4CB661E827A6123400E3D9C6 /* MovieServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661E727A6123400E3D9C6 /* MovieServiceTest.swift */; };
 		64FB0239ED3016586C2D972E /* Pods_test_indra_peliculasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AD7BA4082659B7063A732E /* Pods_test_indra_peliculasTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,13 +45,12 @@
 		4CB661B527A5FE0900E3D9C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CB661B727A5FE0900E3D9C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CB661BC27A5FE0900E3D9C6 /* test-indra-peliculasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-indra-peliculasTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CB661C027A5FE0900E3D9C6 /* test_indra_peliculasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_indra_peliculasTests.swift; sourceTree = "<group>"; };
 		4CB661DA27A601B200E3D9C6 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		4CB661DD27A601DA00E3D9C6 /* MovieEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEndpoint.swift; sourceTree = "<group>"; };
 		4CB661DF27A6032000E3D9C6 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		4CB661E127A6033D00E3D9C6 /* MovieRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRequest.swift; sourceTree = "<group>"; };
 		4CB661E327A6034700E3D9C6 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
-		4CB661E527A6038100E3D9C6 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
+		4CB661E727A6123400E3D9C6 /* MovieServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServiceTest.swift; sourceTree = "<group>"; };
 		6C9153D6ADF6EC8AC8349651 /* Pods-test-indra-peliculas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-indra-peliculas.release.xcconfig"; path = "Target Support Files/Pods-test-indra-peliculas/Pods-test-indra-peliculas.release.xcconfig"; sourceTree = "<group>"; };
 		77EEAF95EA048D95672D3858 /* Pods_test_indra_peliculas_test_indra_peliculasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_indra_peliculas_test_indra_peliculasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A20C356C00EE85DDC0A44D /* Pods-test-indra-peliculas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-indra-peliculas.debug.xcconfig"; path = "Target Support Files/Pods-test-indra-peliculas/Pods-test-indra-peliculas.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,7 +118,7 @@
 		4CB661BF27A5FE0900E3D9C6 /* test-indra-peliculasTests */ = {
 			isa = PBXGroup;
 			children = (
-				4CB661C027A5FE0900E3D9C6 /* test_indra_peliculasTests.swift */,
+				4CB661E727A6123400E3D9C6 /* MovieServiceTest.swift */,
 			);
 			path = "test-indra-peliculasTests";
 			sourceTree = "<group>";
@@ -141,7 +139,6 @@
 				4CB661DF27A6032000E3D9C6 /* MovieService.swift */,
 				4CB661E127A6033D00E3D9C6 /* MovieRequest.swift */,
 				4CB661E327A6034700E3D9C6 /* MovieResponse.swift */,
-				4CB661E527A6038100E3D9C6 /* MovieData.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -225,6 +222,7 @@
 					};
 					4CB661BB27A5FE0900E3D9C6 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 						TestTargetID = 4CB661A527A5FE0700E3D9C6;
 					};
 				};
@@ -340,7 +338,6 @@
 				4CB661E027A6032000E3D9C6 /* MovieService.swift in Sources */,
 				4CB661AE27A5FE0700E3D9C6 /* ViewController.swift in Sources */,
 				4CB661AA27A5FE0700E3D9C6 /* AppDelegate.swift in Sources */,
-				4CB661E627A6038100E3D9C6 /* MovieData.swift in Sources */,
 				4CB661DE27A601DA00E3D9C6 /* MovieEndpoint.swift in Sources */,
 				4CB661DB27A601B200E3D9C6 /* EndPoint.swift in Sources */,
 				4CB661E427A6034700E3D9C6 /* MovieResponse.swift in Sources */,
@@ -353,7 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CB661C127A5FE0900E3D9C6 /* test_indra_peliculasTests.swift in Sources */,
+				4CB661E827A6123400E3D9C6 /* MovieServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +564,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JGHBCD3B3C;
@@ -581,6 +579,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.miguel.otero.test.indra.peliculas.test-indra-peliculasTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-indra-peliculas.app/test-indra-peliculas";
@@ -593,6 +592,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JGHBCD3B3C;

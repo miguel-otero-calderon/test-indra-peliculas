@@ -10,14 +10,14 @@ import Alamofire
 
 enum MovieEndPoint: EndPoint {
     
-    case getMoviesPopular
-    case getMoviesTopReated
-    case getMoviesUpComing
+    case getMoviesPopular(page:Int)
+    case getMoviesTopReated(page:Int)
+    case getMoviesUpComing(page:Int)
     
     var apiKey: String {
-        return "?api_key=5bacc14904bd68ba223796bc499eec47"
+        return "&api_key=5bacc14904bd68ba223796bc499eec47"
     }
-    
+
     var baseURL: String {
         return "https://api.themoviedb.org"
     }
@@ -53,4 +53,20 @@ enum MovieEndPoint: EndPoint {
             return nil
         }
     }
+    
+    private var pagination: String {
+        switch self {
+        case .getMoviesPopular(page: let page):
+            return "?page=\(page)"
+        case .getMoviesTopReated(page: let page):
+            return "?page=\(page)"
+        case .getMoviesUpComing(page: let page):
+            return "?page=\(page)"
+        }
+    }
+    
+    func toURL() -> URLConvertible {
+        return baseURL + path + pagination + apiKey
+    }
+    
 }

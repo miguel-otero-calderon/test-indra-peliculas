@@ -9,6 +9,7 @@ import Foundation
 
 struct MovieRequest {
     let movieType: MovieType
+    let page: Int
 }
 
 enum MovieType {

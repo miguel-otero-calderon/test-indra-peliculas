@@ -15,19 +15,23 @@ protocol MovieServiceProtocol{
 class MovieService: MovieServiceProtocol {
     
     func getMovies(request: MovieRequest, completion: @escaping (MovieResponse?, Error?) -> Void) {
-        var endPoint: MovieEndPoint
+        let endPoint: MovieEndPoint
+        
         switch request.movieType {
         case .popular:
-            endPoint = .getMoviesPopular
+            endPoint = .getMoviesPopular(page: request.page)
         case .topRated:
-            endPoint = .getMoviesTopReated
+            endPoint = .getMoviesTopReated(page: request.page)
         case .upComing:
-            endPoint = .getMoviesUpComing
+            endPoint = .getMoviesUpComing(page: request.page)
         }
         
         print(endPoint.toURL())
         
-        AF.request(endPoint.toURL(), method: endPoint.method).response {[weak self] response in
+        AF.request( endPoint.toURL(),
+                    method: endPoint.method)
+            .response {[weak self] response in
+                
             switch response.result {
             case .success(let data):
                 guard let data = data else {
