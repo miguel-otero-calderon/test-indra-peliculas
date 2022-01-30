@@ -39,6 +39,7 @@
 		4CB6621827A628CD00E3D9C6 /* MovieRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6621127A628CD00E3D9C6 /* MovieRemoteDataManager.swift */; };
 		4CB6621927A628CD00E3D9C6 /* MovieWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6621227A628CD00E3D9C6 /* MovieWireFrame.swift */; };
 		4CB6621B27A6291D00E3D9C6 /* MovieView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB6621A27A6291D00E3D9C6 /* MovieView.storyboard */; };
+		4CB6621E27A6496300E3D9C6 /* LoginValidationsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6621D27A6496300E3D9C6 /* LoginValidationsUseCase.swift */; };
 		64FB0239ED3016586C2D972E /* Pods_test_indra_peliculasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AD7BA4082659B7063A732E /* Pods_test_indra_peliculasTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		4CB6621127A628CD00E3D9C6 /* MovieRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRemoteDataManager.swift; sourceTree = "<group>"; };
 		4CB6621227A628CD00E3D9C6 /* MovieWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieWireFrame.swift; sourceTree = "<group>"; };
 		4CB6621A27A6291D00E3D9C6 /* MovieView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieView.storyboard; sourceTree = "<group>"; };
+		4CB6621D27A6496300E3D9C6 /* LoginValidationsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidationsUseCase.swift; sourceTree = "<group>"; };
 		6C9153D6ADF6EC8AC8349651 /* Pods-test-indra-peliculas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-indra-peliculas.release.xcconfig"; path = "Target Support Files/Pods-test-indra-peliculas/Pods-test-indra-peliculas.release.xcconfig"; sourceTree = "<group>"; };
 		77EEAF95EA048D95672D3858 /* Pods_test_indra_peliculas_test_indra_peliculasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_indra_peliculas_test_indra_peliculasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A20C356C00EE85DDC0A44D /* Pods-test-indra-peliculas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-indra-peliculas.debug.xcconfig"; path = "Target Support Files/Pods-test-indra-peliculas/Pods-test-indra-peliculas.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				4CB661A927A5FE0700E3D9C6 /* AppDelegate.swift */,
 				4CB661AB27A5FE0700E3D9C6 /* SceneDelegate.swift */,
+				4CB6621C27A6493B00E3D9C6 /* UseCase */,
 				4CB6620B27A6281B00E3D9C6 /* Movie */,
 				4CB661E927A6187100E3D9C6 /* Login */,
 				4CB661D927A6017E00E3D9C6 /* Networking */,
@@ -238,6 +241,14 @@
 				4CB6621A27A6291D00E3D9C6 /* MovieView.storyboard */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		4CB6621C27A6493B00E3D9C6 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				4CB6621D27A6496300E3D9C6 /* LoginValidationsUseCase.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 		B4F06C028FE1DF66B3014165 /* Pods */ = {
@@ -447,6 +458,7 @@
 				4CB661DE27A601DA00E3D9C6 /* MovieEndpoint.swift in Sources */,
 				4CB661DB27A601B200E3D9C6 /* EndPoint.swift in Sources */,
 				4CB6621727A628CD00E3D9C6 /* MovieView.swift in Sources */,
+				4CB6621E27A6496300E3D9C6 /* LoginValidationsUseCase.swift in Sources */,
 				4CB661E427A6034700E3D9C6 /* MovieResponse.swift in Sources */,
 				4CB661F727A61CDE00E3D9C6 /* LoginRemoteDataManager.swift in Sources */,
 				4CB661E227A6033D00E3D9C6 /* MovieRequest.swift in Sources */,

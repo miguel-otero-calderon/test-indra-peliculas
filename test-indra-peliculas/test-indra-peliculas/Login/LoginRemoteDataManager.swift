@@ -12,13 +12,20 @@ class LoginRemoteDataManager:LoginRemoteDataManagerInputProtocol {
     var remoteRequestHandler: LoginRemoteDataManagerOutputProtocol?
     
     func signIn(email: String, password: String, completion: @escaping (Result<LoginEntity, Error>) -> Void) {
-        if email.uppercased() == "ADMIN" && password == "Password*123" {
-            let user = LoginEntity(username: "Administrador", email: "Admin")
-            UserDefaults.standard.setValue(user.username, forKey: "username")
-            UserDefaults.standard.setValue(user.email, forKey: "email")
-            completion(.success(user))
+        let userHard = "ADMIN"
+        let passwordHard = "Password*123"
+        
+        if email.uppercased() == userHard && password == password {
+            let loginEntity = LoginEntity(username: "Administrador", email: "Admin", password: password)
+            UserDefaults.standard.setValue(loginEntity.username, forKey: "username")
+            UserDefaults.standard.setValue(loginEntity.email, forKey: "email")
+            completion(.success(loginEntity))
         } else {
-            completion(.failure(LoginError.signInFailed))
+            if email.uppercased() != userHard {
+                completion(.failure(LoginError.userNotExist))
+            } else if password != passwordHard {
+                completion(.failure(LoginError.passwordIncorrect))
+            }
         }
     }
 }

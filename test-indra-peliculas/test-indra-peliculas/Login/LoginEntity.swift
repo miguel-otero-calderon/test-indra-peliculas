@@ -10,7 +10,10 @@ import Foundation
 struct LoginEntity: Codable {
     let username: String
     let email: String
+    let password: String
 }
 enum LoginError: Error {
-    case signInFailed
+    case userNotExist
+    case passwordIncorrect
+    
 }

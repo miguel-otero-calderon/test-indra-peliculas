@@ -115,6 +115,21 @@ class LoginView: UIViewController, UITextFieldDelegate {
               let password = passwordField.text else {
             return
         }
+        
+        let validation = LoginValidationsUseCase(loginEntity:
+                                                    LoginEntity(username: "",
+                                                                email: email,
+                                                                password: password))
+        if validation.getValidatedUser() != "" {
+            emailField.text = ""
+            emailField.becomeFirstResponder()
+            return
+        }
+        if validation.getValidatedPassword() != "" {
+            passwordField.text = ""
+            passwordField.becomeFirstResponder()
+            return
+        }
 
         presenter?.signIn(email: email, password: password) { [weak self] result in
             DispatchQueue.main.async {
