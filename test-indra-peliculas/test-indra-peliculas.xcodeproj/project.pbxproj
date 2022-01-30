@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		23388A0D02727AB8D87C54E8 /* Pods_test_indra_peliculas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E36DFE414BC179CF1706322E /* Pods_test_indra_peliculas.framework */; };
+		4CA37A1C27A6BFD0006A30B4 /* ShrinkingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A1B27A6BFD0006A30B4 /* ShrinkingButton.swift */; };
+		4CA37A1F27A6C008006A30B4 /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A1E27A6C008006A30B4 /* SpinerLayer.swift */; };
+		4CA37A2127A6C0B3006A30B4 /* ImageTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A2027A6C0B3006A30B4 /* ImageTransitionHandler.swift */; };
+		4CA37A2327A6C10E006A30B4 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A2227A6C10E006A30B4 /* Storyboarded.swift */; };
+		4CA37A2527A6C26A006A30B4 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A2427A6C26A006A30B4 /* CGRect+Extensions.swift */; };
 		4CB661AA27A5FE0700E3D9C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661A927A5FE0700E3D9C6 /* AppDelegate.swift */; };
 		4CB661AC27A5FE0700E3D9C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661AB27A5FE0700E3D9C6 /* SceneDelegate.swift */; };
 		4CB661B327A5FE0900E3D9C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB661B227A5FE0900E3D9C6 /* Assets.xcassets */; };
@@ -73,6 +78,11 @@
 /* Begin PBXFileReference section */
 		21AD7BA4082659B7063A732E /* Pods_test_indra_peliculasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_indra_peliculasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0529052A258497D060C5E /* Pods-test-indra-peliculasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-indra-peliculasTests.release.xcconfig"; path = "Target Support Files/Pods-test-indra-peliculasTests/Pods-test-indra-peliculasTests.release.xcconfig"; sourceTree = "<group>"; };
+		4CA37A1B27A6BFD0006A30B4 /* ShrinkingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrinkingButton.swift; sourceTree = "<group>"; };
+		4CA37A1E27A6C008006A30B4 /* SpinerLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinerLayer.swift; sourceTree = "<group>"; };
+		4CA37A2027A6C0B3006A30B4 /* ImageTransitionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransitionHandler.swift; sourceTree = "<group>"; };
+		4CA37A2227A6C10E006A30B4 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		4CA37A2427A6C26A006A30B4 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
 		4CB661A627A5FE0700E3D9C6 /* test-indra-peliculas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-indra-peliculas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB661A927A5FE0700E3D9C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CB661AB27A5FE0700E3D9C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +164,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CA37A1A27A6BFAB006A30B4 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4CA37A1D27A6BFE4006A30B4 /* ShrinkingButton */,
+				4CA37A2027A6C0B3006A30B4 /* ImageTransitionHandler.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		4CA37A1D27A6BFE4006A30B4 /* ShrinkingButton */ = {
+			isa = PBXGroup;
+			children = (
+				4CA37A1B27A6BFD0006A30B4 /* ShrinkingButton.swift */,
+				4CA37A1E27A6C008006A30B4 /* SpinerLayer.swift */,
+			);
+			path = ShrinkingButton;
+			sourceTree = "<group>";
+		};
+		4CA37A2627A6C289006A30B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4CB6620027A61EE200E3D9C6 /* Extensions.swift */,
+				4CA37A2427A6C26A006A30B4 /* CGRect+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4CB6619D27A5FE0700E3D9C6 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +214,7 @@
 		4CB661A827A5FE0700E3D9C6 /* test-indra-peliculas */ = {
 			isa = PBXGroup;
 			children = (
+				4CA37A1A27A6BFAB006A30B4 /* ViewComponents */,
 				4CB661A927A5FE0700E3D9C6 /* AppDelegate.swift */,
 				4CB661AB27A5FE0700E3D9C6 /* SceneDelegate.swift */,
 				4CB6623027A659D000E3D9C6 /* Profile */,
@@ -251,7 +289,7 @@
 		4CB661FF27A61EB600E3D9C6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4CB6620027A61EE200E3D9C6 /* Extensions.swift */,
+				4CA37A2627A6C289006A30B4 /* Extensions */,
 				4CB6620227A61F6200E3D9C6 /* HapticsManager.swift */,
 			);
 			path = Resources;
@@ -261,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				4CB6621F27A652B300E3D9C6 /* TabBarViewController.swift */,
+				4CA37A2227A6C10E006A30B4 /* Storyboarded.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -293,9 +332,9 @@
 			children = (
 				4CB6622627A6597E00E3D9C6 /* SearchView.swift */,
 				4CB6622227A6597E00E3D9C6 /* SearchPresenter.swift */,
+				4CB6622527A6597E00E3D9C6 /* SearchInteractor.swift */,
 				4CB6622327A6597E00E3D9C6 /* SearchLocalDataManager.swift */,
 				4CB6622427A6597E00E3D9C6 /* SearchProtocols.swift */,
-				4CB6622527A6597E00E3D9C6 /* SearchInteractor.swift */,
 				4CB6622727A6597E00E3D9C6 /* SearchRemoteDataManager.swift */,
 				4CB6622827A6597E00E3D9C6 /* SearchWireFrame.swift */,
 				4CB6623F27A6686100E3D9C6 /* SearchView.storyboard */,
@@ -519,10 +558,12 @@
 				4CB6620127A61EE200E3D9C6 /* Extensions.swift in Sources */,
 				4CB661F327A61C7F00E3D9C6 /* LoginWireFrame.swift in Sources */,
 				4CB6622E27A6597E00E3D9C6 /* SearchRemoteDataManager.swift in Sources */,
+				4CA37A1F27A6C008006A30B4 /* SpinerLayer.swift in Sources */,
 				4CB6621327A628CD00E3D9C6 /* MoviePresenter.swift in Sources */,
 				4CB6623A27A659E500E3D9C6 /* ProfileProtocols.swift in Sources */,
 				4CB6623D27A659E500E3D9C6 /* ProfileRemoteDataManager.swift in Sources */,
 				4CB6622027A652B300E3D9C6 /* TabBarViewController.swift in Sources */,
+				4CA37A2527A6C26A006A30B4 /* CGRect+Extensions.swift in Sources */,
 				4CB6623E27A659E500E3D9C6 /* ProfileWireFrame.swift in Sources */,
 				4CB661F927A61D5F00E3D9C6 /* LoginEntity.swift in Sources */,
 				4CB6623B27A659E500E3D9C6 /* ProfileInteractor.swift in Sources */,
@@ -533,6 +574,7 @@
 				4CB661ED27A61BED00E3D9C6 /* LoginProtocols.swift in Sources */,
 				4CB6623827A659E500E3D9C6 /* ProfilePresenter.swift in Sources */,
 				4CB661AA27A5FE0700E3D9C6 /* AppDelegate.swift in Sources */,
+				4CA37A1C27A6BFD0006A30B4 /* ShrinkingButton.swift in Sources */,
 				4CB6623927A659E500E3D9C6 /* ProfileLocalDataManager.swift in Sources */,
 				4CB661EB27A6192200E3D9C6 /* LoginView.swift in Sources */,
 				4CB6621527A628CD00E3D9C6 /* MovieProtocols.swift in Sources */,
@@ -548,12 +590,14 @@
 				4CB661AC27A5FE0700E3D9C6 /* SceneDelegate.swift in Sources */,
 				4CB6621927A628CD00E3D9C6 /* MovieWireFrame.swift in Sources */,
 				4CB6623C27A659E500E3D9C6 /* ProfileView.swift in Sources */,
+				4CA37A2327A6C10E006A30B4 /* Storyboarded.swift in Sources */,
 				4CB6622A27A6597E00E3D9C6 /* SearchLocalDataManager.swift in Sources */,
 				4CB6621827A628CD00E3D9C6 /* MovieRemoteDataManager.swift in Sources */,
 				4CB6621427A628CD00E3D9C6 /* MovieLocalDataManager.swift in Sources */,
 				4CB661FE27A61E7C00E3D9C6 /* IGTextField.swift in Sources */,
 				4CB6621627A628CD00E3D9C6 /* MovieInteractor.swift in Sources */,
 				4CB6620327A61F6200E3D9C6 /* HapticsManager.swift in Sources */,
+				4CA37A2127A6C0B3006A30B4 /* ImageTransitionHandler.swift in Sources */,
 				4CB661F527A61CAE00E3D9C6 /* LoginLocalDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

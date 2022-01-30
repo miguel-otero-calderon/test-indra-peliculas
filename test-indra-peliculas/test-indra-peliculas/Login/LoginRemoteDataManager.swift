@@ -15,8 +15,8 @@ class LoginRemoteDataManager:LoginRemoteDataManagerInputProtocol {
         let userHard = "ADMIN"
         let passwordHard = "Password*123"
         
-        if email.uppercased() == userHard && password == password {
-            let loginEntity = LoginEntity(username: "Administrador", email: "Admin", password: password)
+        if email.uppercased() == userHard && password == passwordHard {
+            let loginEntity = LoginEntity(username: "Administrador", email: email, password: password)
             UserDefaults.standard.setValue(loginEntity.username, forKey: "username")
             UserDefaults.standard.setValue(loginEntity.email, forKey: "email")
             completion(.success(loginEntity))

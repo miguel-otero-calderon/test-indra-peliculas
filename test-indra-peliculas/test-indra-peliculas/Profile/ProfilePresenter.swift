@@ -18,6 +18,10 @@ class ProfilePresenter  {
 }
 
 extension ProfilePresenter: ProfilePresenterProtocol {
+    func loginOut() {
+        interactor?.loginOut()
+    }
+    
     // TODO: implement presenter methods
     func viewDidLoad() {
     }

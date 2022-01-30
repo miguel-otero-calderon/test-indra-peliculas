@@ -136,7 +136,7 @@ class LoginView: UIViewController, UITextFieldDelegate {
                 switch result {
                 case .success:
                     HapticManager.shared.vibrate(for: .success)
-                    let vc = MovieWireFrame.createMovieModule()
+                    let vc = TabBarViewController()
                     vc.modalPresentationStyle = .fullScreen
                     self?.present(
                         vc,

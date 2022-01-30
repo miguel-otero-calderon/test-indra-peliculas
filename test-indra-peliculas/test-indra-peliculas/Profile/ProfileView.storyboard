@@ -4,30 +4,119 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Profile View-->
-        <scene sceneID="s0d-6b-0kx">
+        <scene sceneID="qVO-mx-whY">
             <objects>
-                <viewController storyboardIdentifier="ProfileView" id="Y6W-OH-hqX" customClass="ProfileView" customModule="test_indra_peliculas" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLD-6M-Hyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ProfileView" id="A5c-4P-QZW" customClass="ProfileView" customModule="test_indra_peliculas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0gL-lu-l8M" customClass="GradientView" customModule="test_indra_peliculas" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="2u0-4E-af1">
+                                <rect key="frame" x="24" y="289.5" width="366" height="277"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SignInLogoFirst" translatesAutoresizingMaskIntoConstraints="NO" id="H0D-7d-mxh">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="200"/>
+                                        <color key="tintColor" name="SignInGradientColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="4Sl-ak-WMh"/>
+                                            <constraint firstAttribute="height" constant="150" id="ck3-ZC-M3g"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ck3-ZC-M3g"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <exclude reference="4Sl-ak-WMh"/>
+                                                <include reference="ck3-ZC-M3g"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLN-uI-D6w" customClass="ShrinkingButton" customModule="test_indra_peliculas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="225" width="366" height="52"/>
+                                        <color key="backgroundColor" name="SignInGradientColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="15" maxX="20" maxY="15"/>
+                                        <state key="normal" title="Login Out">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonAction:" destination="A5c-4P-QZW" eventType="touchUpInside" id="9g2-0J-puA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yit-hB-YvF" userLabel="Help Button">
+                                <rect key="frame" x="342" y="68" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="FZK-sF-MXZ"/>
+                                    <constraint firstAttribute="width" secondItem="Yit-hB-YvF" secondAttribute="height" multiplier="1:1" id="WZG-S7-V3d"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Help"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hA2-rz-nWS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hA2-rz-nWS" firstAttribute="trailing" secondItem="Yit-hB-YvF" secondAttribute="trailing" constant="24" id="6CU-jS-3CM"/>
+                            <constraint firstItem="2u0-4E-af1" firstAttribute="centerY" secondItem="0gL-lu-l8M" secondAttribute="centerY" constant="-20" id="JiA-Cz-XHI"/>
+                            <constraint firstItem="2u0-4E-af1" firstAttribute="centerX" secondItem="0gL-lu-l8M" secondAttribute="centerX" id="XL0-c2-XpF"/>
+                            <constraint firstItem="2u0-4E-af1" firstAttribute="leading" secondItem="hA2-rz-nWS" secondAttribute="leading" constant="24" id="leq-Ss-m4Y"/>
+                            <constraint firstItem="hA2-rz-nWS" firstAttribute="trailing" secondItem="2u0-4E-af1" secondAttribute="trailing" constant="24" id="nwO-Jg-l8U"/>
+                            <constraint firstItem="Yit-hB-YvF" firstAttribute="top" secondItem="hA2-rz-nWS" secondAttribute="top" constant="24" id="zsf-iq-bMt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" name="SignInGradientColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                <real key="value" value="0.050000000000000003"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="iconImageView" destination="H0D-7d-mxh" id="hrn-Zc-0aQ"/>
+                        <outlet property="signInButton" destination="xLN-uI-D6w" id="qNi-YA-b12"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="57"/>
+            <point key="canvasLocation" x="1325.5999999999999" y="80.50974512743629"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="xLN-uI-D6w">
+            <size key="intrinsicContentSize" width="118" height="52"/>
+        </designable>
+    </designables>
+    <color key="tintColor" systemColor="systemBlueColor"/>
     <resources>
+        <image name="Help" width="33" height="33"/>
+        <image name="SignInLogoFirst" width="256" height="256"/>
+        <namedColor name="SignInGradientColor">
+            <color red="0.31000000238418579" green="0.49399998784065247" blue="0.71399998664855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

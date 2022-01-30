@@ -9,6 +9,9 @@
 import Foundation
 
 class ProfileLocalDataManager:ProfileLocalDataManagerInputProtocol {
-    
-    
+    func loginOut() {
+        UserDefaults.standard.removeObject(forKey: "email")
+        UserDefaults.standard.removeObject(forKey: "username")
+        print("LoginOut")
+    }
 }

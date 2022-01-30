@@ -15,6 +15,9 @@ class ProfileInteractor: ProfileInteractorInputProtocol {
     var localDatamanager: ProfileLocalDataManagerInputProtocol?
     var remoteDatamanager: ProfileRemoteDataManagerInputProtocol?
 
+    func loginOut() {
+        localDatamanager?.loginOut()
+    }
 }
 
 extension ProfileInteractor: ProfileRemoteDataManagerOutputProtocol {
