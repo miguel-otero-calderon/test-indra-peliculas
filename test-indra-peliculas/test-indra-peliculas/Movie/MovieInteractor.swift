@@ -15,6 +15,9 @@ class MovieInteractor: MovieInteractorInputProtocol {
     var localDatamanager: MovieLocalDataManagerInputProtocol?
     var remoteDatamanager: MovieRemoteDataManagerInputProtocol?
 
+    func getMovies(request: MovieRequest, completion: @escaping (Result<[MovieData], Error>) -> Void) {
+        remoteDatamanager?.getMovies(request: request, completion: completion)
+    }
 }
 
 extension MovieInteractor: MovieRemoteDataManagerOutputProtocol {

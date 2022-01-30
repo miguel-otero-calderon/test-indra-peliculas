@@ -21,6 +21,9 @@ extension MoviePresenter: MoviePresenterProtocol {
     // TODO: implement presenter methods
     func viewDidLoad() {
     }
+    func getMovies(request: MovieRequest, completion: @escaping (Result<[MovieData], Error>) -> Void) {
+        interactor?.getMovies(request: request, completion: completion)
+    }
 }
 
 extension MoviePresenter: MovieInteractorOutputProtocol {

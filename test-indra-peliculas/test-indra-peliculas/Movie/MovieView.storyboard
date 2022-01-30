@@ -16,9 +16,43 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V11-vy-7zg">
+                                <rect key="frame" x="5" y="64" width="404" height="778"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f5G-Cc-6zO">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="778"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="5xp-1u-tcS">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="f5G-Cc-6zO" firstAttribute="leading" secondItem="V11-vy-7zg" secondAttribute="leading" id="P4g-8x-xm7"/>
+                                    <constraint firstAttribute="bottom" secondItem="f5G-Cc-6zO" secondAttribute="bottom" id="mfg-oT-biD"/>
+                                    <constraint firstItem="f5G-Cc-6zO" firstAttribute="top" secondItem="V11-vy-7zg" secondAttribute="top" id="rQC-Ri-3r8"/>
+                                    <constraint firstAttribute="trailing" secondItem="f5G-Cc-6zO" secondAttribute="trailing" id="zeP-3M-Etf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V11-vy-7zg" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="5iK-9I-E9t"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="V11-vy-7zg" secondAttribute="trailing" constant="5" id="Bw3-dr-x33"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="V11-vy-7zg" secondAttribute="bottom" constant="20" id="Nz4-d4-wJ2"/>
+                            <constraint firstItem="V11-vy-7zg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="kKn-os-Um4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="f5G-Cc-6zO" id="kCT-t4-om6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

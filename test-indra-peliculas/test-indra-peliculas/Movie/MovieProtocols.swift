@@ -26,6 +26,7 @@ protocol MoviePresenterProtocol: class {
     var wireFrame: MovieWireFrameProtocol? { get set }
     
     func viewDidLoad()
+    func getMovies(request: MovieRequest, completion: @escaping (Result<[MovieData], Error>) -> Void)
 }
 
 protocol MovieInteractorOutputProtocol: class {
@@ -37,6 +38,8 @@ protocol MovieInteractorInputProtocol: class {
     var presenter: MovieInteractorOutputProtocol? { get set }
     var localDatamanager: MovieLocalDataManagerInputProtocol? { get set }
     var remoteDatamanager: MovieRemoteDataManagerInputProtocol? { get set }
+    
+    func getMovies(request: MovieRequest, completion: @escaping (Result<[MovieData], Error>) -> Void)
 }
 
 protocol MovieDataManagerInputProtocol: class {
@@ -46,6 +49,7 @@ protocol MovieDataManagerInputProtocol: class {
 protocol MovieRemoteDataManagerInputProtocol: class {
     // INTERACTOR -> REMOTEDATAMANAGER
     var remoteRequestHandler: MovieRemoteDataManagerOutputProtocol? { get set }
+    func getMovies(request: MovieRequest, completion: @escaping (Result<[MovieData], Error>) -> Void)
 }
 
 protocol MovieRemoteDataManagerOutputProtocol: class {

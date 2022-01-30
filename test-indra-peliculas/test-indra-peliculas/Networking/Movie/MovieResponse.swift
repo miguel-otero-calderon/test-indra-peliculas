@@ -26,12 +26,12 @@ struct MovieDates: Codable {
 
 struct MovieData: Codable {
     let adult: Bool
-    let backdropPath: String?
+    var backdropPath: String?
     let genreIDS: [Int]
     let id: Int
     let originalLanguage, originalTitle, overview: String
     let popularity: Double
-    let posterPath:String?
+    var posterPath:String?
     let releaseDate, title: String
     let video: Bool
     let voteAverage: Double
