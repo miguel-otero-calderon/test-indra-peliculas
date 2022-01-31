@@ -86,7 +86,10 @@ extension MovieView: UICollectionViewDelegate {
                 
         if indexPath.row <= 19 {
             let movie = self.movies[indexPath.row]
-            //        self.delegate?.isSelected(movie: movie)
+            let movieDetailView = (MovieDetailWireFrame.createMovieDetailModule() as? MovieDetailView)!
+            movieDetailView.movie = movie
+            movieDetailView.modalPresentationStyle = .fullScreen
+            self.present(movieDetailView, animated: true, completion: nil)
         }
         if indexPath.row == 20 {
             
