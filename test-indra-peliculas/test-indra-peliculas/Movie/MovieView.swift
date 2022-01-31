@@ -16,6 +16,7 @@ class MovieView: UIViewController {
     var presenter: MoviePresenterProtocol?
     var movies:[MovieData] = []
     var page: Int = 0
+    var totalPages: Int = 0
 
     // MARK: Lifecycle
 

@@ -44,6 +44,14 @@ class MovieDetailView: UIViewController {
             }
         }
         if self.movieImage.image == nil {
+            if let posterPath = movie.posterPath {
+                if let url = URL(string: posterPath) {
+                    self.movieImage.kf.setImage(with: url ,
+                                                placeholder: UIImage(named: "PosterPlaceholder"))
+                }
+            }
+        }
+        if self.movieImage.image == nil {
             self.movieImage.image = UIImage(named: "PosterPlaceholder")
         }
     }
