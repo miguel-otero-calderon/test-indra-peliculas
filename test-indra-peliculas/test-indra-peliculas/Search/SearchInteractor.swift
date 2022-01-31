@@ -15,6 +15,9 @@ class SearchInteractor: SearchInteractorInputProtocol {
     var localDatamanager: SearchLocalDataManagerInputProtocol?
     var remoteDatamanager: SearchRemoteDataManagerInputProtocol?
 
+    func getSearch(request: SearchRequest, completion: @escaping (Result<[MovieData], Error>) -> Void) {
+        remoteDatamanager?.getSearch(request: request, completion: completion)
+    }
 }
 
 extension SearchInteractor: SearchRemoteDataManagerOutputProtocol {

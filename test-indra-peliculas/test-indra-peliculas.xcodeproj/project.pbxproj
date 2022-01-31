@@ -28,6 +28,10 @@
 		4CA37A4527A755C7006A30B4 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A4427A755C7006A30B4 /* FontHelper.swift */; };
 		4CA37A4727A75616006A30B4 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A4627A75616006A30B4 /* UIView+Layout.swift */; };
 		4CA37A4927A75647006A30B4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A4827A75647006A30B4 /* Utils.swift */; };
+		4CA37A4C27A76A7F006A30B4 /* SearchEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A4B27A76A7F006A30B4 /* SearchEndPoint.swift */; };
+		4CA37A4E27A77A43006A30B4 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A4D27A77A43006A30B4 /* SearchService.swift */; };
+		4CA37A5027A77A9F006A30B4 /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A4F27A77A9F006A30B4 /* SearchRequest.swift */; };
+		4CA37A5227A77B2F006A30B4 /* SearchServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA37A5127A77B2F006A30B4 /* SearchServiceTest.swift */; };
 		4CB661AA27A5FE0700E3D9C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661A927A5FE0700E3D9C6 /* AppDelegate.swift */; };
 		4CB661AC27A5FE0700E3D9C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB661AB27A5FE0700E3D9C6 /* SceneDelegate.swift */; };
 		4CB661B327A5FE0900E3D9C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB661B227A5FE0900E3D9C6 /* Assets.xcassets */; };
@@ -113,6 +117,10 @@
 		4CA37A4427A755C7006A30B4 /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
 		4CA37A4627A75616006A30B4 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		4CA37A4827A75647006A30B4 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4CA37A4B27A76A7F006A30B4 /* SearchEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEndPoint.swift; sourceTree = "<group>"; };
+		4CA37A4D27A77A43006A30B4 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		4CA37A4F27A77A9F006A30B4 /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		4CA37A5127A77B2F006A30B4 /* SearchServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceTest.swift; sourceTree = "<group>"; };
 		4CB661A627A5FE0700E3D9C6 /* test-indra-peliculas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-indra-peliculas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB661A927A5FE0700E3D9C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CB661AB27A5FE0700E3D9C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -260,6 +268,16 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		4CA37A4A27A76A62006A30B4 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4CA37A4B27A76A7F006A30B4 /* SearchEndPoint.swift */,
+				4CA37A4D27A77A43006A30B4 /* SearchService.swift */,
+				4CA37A4F27A77A9F006A30B4 /* SearchRequest.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		4CB6619D27A5FE0700E3D9C6 = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				4CB661E727A6123400E3D9C6 /* MovieServiceTest.swift */,
+				4CA37A5127A77B2F006A30B4 /* SearchServiceTest.swift */,
 			);
 			path = "test-indra-peliculasTests";
 			sourceTree = "<group>";
@@ -314,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				4CB661DA27A601B200E3D9C6 /* EndPoint.swift */,
+				4CA37A4A27A76A62006A30B4 /* Search */,
 				4CB661DC27A601C000E3D9C6 /* Movie */,
 			);
 			path = Networking;
@@ -658,10 +678,12 @@
 				4CB6621E27A6496300E3D9C6 /* LoginValidationsUseCase.swift in Sources */,
 				4CB661E427A6034700E3D9C6 /* MovieResponse.swift in Sources */,
 				4CB661F727A61CDE00E3D9C6 /* LoginRemoteDataManager.swift in Sources */,
+				4CA37A4C27A76A7F006A30B4 /* SearchEndPoint.swift in Sources */,
 				4CB661E227A6033D00E3D9C6 /* MovieRequest.swift in Sources */,
 				4CB6622F27A6597E00E3D9C6 /* SearchWireFrame.swift in Sources */,
 				4CB661FC27A61E4900E3D9C6 /* LoginHeaderView.swift in Sources */,
 				4CB661AC27A5FE0700E3D9C6 /* SceneDelegate.swift in Sources */,
+				4CA37A5027A77A9F006A30B4 /* SearchRequest.swift in Sources */,
 				4CA37A3C27A72EF4006A30B4 /* MovieDetailView.swift in Sources */,
 				4CB6621927A628CD00E3D9C6 /* MovieWireFrame.swift in Sources */,
 				4CA37A3927A72EF4006A30B4 /* MovieDetailLocalDataManager.swift in Sources */,
@@ -672,6 +694,7 @@
 				4CB6621427A628CD00E3D9C6 /* MovieLocalDataManager.swift in Sources */,
 				4CB661FE27A61E7C00E3D9C6 /* IGTextField.swift in Sources */,
 				4CB6621627A628CD00E3D9C6 /* MovieInteractor.swift in Sources */,
+				4CA37A4E27A77A43006A30B4 /* SearchService.swift in Sources */,
 				4CB6620327A61F6200E3D9C6 /* HapticsManager.swift in Sources */,
 				4CA37A2127A6C0B3006A30B4 /* ImageTransitionHandler.swift in Sources */,
 				4CB661F527A61CAE00E3D9C6 /* LoginLocalDataManager.swift in Sources */,
@@ -683,6 +706,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CB661E827A6123400E3D9C6 /* MovieServiceTest.swift in Sources */,
+				4CA37A5227A77B2F006A30B4 /* SearchServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

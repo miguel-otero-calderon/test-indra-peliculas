@@ -9,16 +9,62 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search View-->
+        <!--Search movies-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="SearchView" id="Y6W-OH-hqX" customClass="SearchView" customModule="test_indra_peliculas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchView" title="Search movies" id="Y6W-OH-hqX" customClass="SearchView" customModule="test_indra_peliculas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mcq-s5-Lou">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" placeholder="Search movies" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Qw-ui-qIP">
+                                        <rect key="frame" x="5" y="5" width="404" height="51"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <scopeButtonTitles>
+                                            <string>Title</string>
+                                            <string>Title</string>
+                                        </scopeButtonTitles>
+                                    </searchBar>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Os-HQ-kdG">
+                                        <rect key="frame" x="0.0" y="56" width="414" height="762"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="mTv-M2-nVK">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="0Qw-ui-qIP" firstAttribute="leading" secondItem="Mcq-s5-Lou" secondAttribute="leading" constant="5" id="2Yo-NW-fnD"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Os-HQ-kdG" secondAttribute="bottom" id="5Wz-5T-TVg"/>
+                                    <constraint firstItem="0Qw-ui-qIP" firstAttribute="top" secondItem="Mcq-s5-Lou" secondAttribute="top" constant="5" id="ARr-qT-tzb"/>
+                                    <constraint firstItem="8Os-HQ-kdG" firstAttribute="leading" secondItem="Mcq-s5-Lou" secondAttribute="leading" id="F7x-72-77p"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Qw-ui-qIP" secondAttribute="trailing" constant="5" id="POd-hB-C9f"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Os-HQ-kdG" secondAttribute="trailing" id="o0s-yM-nvy"/>
+                                    <constraint firstItem="8Os-HQ-kdG" firstAttribute="top" secondItem="0Qw-ui-qIP" secondAttribute="bottom" id="yUQ-ZN-8jd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Mcq-s5-Lou" secondAttribute="trailing" id="4d6-Kz-fRq"/>
+                            <constraint firstItem="Mcq-s5-Lou" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="6FO-I9-r8R"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Mcq-s5-Lou" secondAttribute="bottom" id="yGg-mj-7CN"/>
+                            <constraint firstItem="Mcq-s5-Lou" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zp2-r3-PIN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="8Os-HQ-kdG" id="f1O-NX-cQv"/>
+                        <outlet property="searchBar" destination="0Qw-ui-qIP" id="YSk-dK-f4c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

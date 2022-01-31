@@ -21,6 +21,9 @@ extension SearchPresenter: SearchPresenterProtocol {
     // TODO: implement presenter methods
     func viewDidLoad() {
     }
+    func getSearch(request: SearchRequest, completion: @escaping (Result<[MovieData], Error>) -> Void) {
+        interactor?.getSearch(request: request, completion: completion)
+    }
 }
 
 extension SearchPresenter: SearchInteractorOutputProtocol {

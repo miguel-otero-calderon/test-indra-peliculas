@@ -26,6 +26,7 @@ protocol SearchPresenterProtocol: class {
     var wireFrame: SearchWireFrameProtocol? { get set }
     
     func viewDidLoad()
+    func getSearch(request: SearchRequest, completion: @escaping (Result<[MovieData], Error>) -> Void)
 }
 
 protocol SearchInteractorOutputProtocol: class {
@@ -37,6 +38,7 @@ protocol SearchInteractorInputProtocol: class {
     var presenter: SearchInteractorOutputProtocol? { get set }
     var localDatamanager: SearchLocalDataManagerInputProtocol? { get set }
     var remoteDatamanager: SearchRemoteDataManagerInputProtocol? { get set }
+    func getSearch(request: SearchRequest, completion: @escaping (Result<[MovieData], Error>) -> Void)
 }
 
 protocol SearchDataManagerInputProtocol: class {
@@ -46,6 +48,7 @@ protocol SearchDataManagerInputProtocol: class {
 protocol SearchRemoteDataManagerInputProtocol: class {
     // INTERACTOR -> REMOTEDATAMANAGER
     var remoteRequestHandler: SearchRemoteDataManagerOutputProtocol? { get set }
+    func getSearch(request: SearchRequest, completion: @escaping (Result<[MovieData], Error>) -> Void)
 }
 
 protocol SearchRemoteDataManagerOutputProtocol: class {
